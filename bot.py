@@ -6,8 +6,8 @@ from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 import threading
 import logging
-
-
+from server import run_flask
+threading.Thread(target=run_flask, daemon=True).start()
 import os
 BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")  # Читаем переменную окружения
 
