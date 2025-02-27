@@ -154,8 +154,8 @@ def get_main_menu(user_first_name, user_id):
     btn_info = types.InlineKeyboardButton("📑 Подробнее о нашем VPN", callback_data="info")
     btn_install = types.InlineKeyboardButton("🔧 Установить", callback_data="install")
     markup.add(btn_buy, btn_profile, btn_install)
-    btn_tkg = types.InlineKeyboardButton("📜 ТГК (Отзывы, Новости)", url="http://example.com/tkg")
-    btn_support = types.InlineKeyboardButton("🆘 Поддержка", url="http://example.com/support")
+    btn_tkg = types.InlineKeyboardButton("📜 ТГК (Отзывы, Новости)", url="https://t.me/BytePortVPN_Group")
+    btn_support = types.InlineKeyboardButton("🆘 Поддержка", url="http://t.me/Artik1279")
     markup.add(btn_info, btn_tkg, btn_support)
     return text, markup
 
